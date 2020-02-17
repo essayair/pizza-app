@@ -1,30 +1,26 @@
 import React from 'react';
 
-
-import base_menu from "../assets/icons/icon-base-menu.png";
-import base_cart from "../assets/icons/icon-base-cart.png";
+import menu from "../assets/icons/icon-menu.png";
+import cart from "../assets/icons/icon-cart.png";
 import logo from "../assets/icons/logo.png";
 
 
-class Header extends React.Component{
-
-    render(){
-        return (
-            <header>
-                <div> 
-                    <image className="base_menu" src={ base_menu } alt="base_menu" /> 
-                </div>
-                <div>
-                    <image className="logo" src={ logo } alt="logo" />
-                </div>
-                <div>
-                    <image className="base_cart" src={ base_cart } alt="base_cart" />
-                </div>
+function Header() {
+    return(
         
-             </header>
-        );
-    }
-
+        <header className="header">
+            <div className="menu"> 
+                <img src={menu}  alt="menu" /> 
+            </div>
+            <div className="logo">
+                <img src={logo} alt="logo"   />
+            </div>
+            <div className="cart">
+                <img src={cart} alt="cart" />
+            </div>
+    
+        </header>
+    )
 }
 
 

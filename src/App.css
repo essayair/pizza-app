@@ -1,31 +1,10 @@
-.App {
-  text-align: center;
-  /* width: 1920px; */
-  height: 9557px; 
-  position: relative;
-}
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 * {
   box-sizing: border-box;
 }
-.content {
-  /*delete before deploying*/
-  background-image: url(./assets/bg-imgs/bg-columns.png);
-  background-repeat: no-repeat;
-  background-size: fixed;
-  background-position: center;
-
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100%; 
 }
 
 body {
@@ -36,31 +15,32 @@ body {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
+  width: 100%;
+  height: 100%; 
 }
 
 .slider {
+  display: flex;
   position: relative;
-  color: rgb(231, 143, 9);;
-  font-size: 0.6vw;
+  color: rgb(231, 143, 9);
+  font-size: 1vw;
   width: 100%;
-  /* height: 1087px; */
-  padding-top: 30%;
- 
+  height: 1087px; 
+  justify-content: center;
+  align-items: center;
 }
 .slidercontent {
-  align-content: center;
-  margin-top: 0;
-
+  margin: 10%;
 }
 
 .slider h1 {
-  font-size: 3vw;
+  font-size: 5vw;
   color: white;
   font-family: 'Fredericka the Great', cursive;
 
 }
 .slider h2 {
-  font-size: 2vw;
+  font-size: vw;
   font-family: 'Abril Fatface', cursive;
 }
 .slider .order {
@@ -70,8 +50,79 @@ body {
 /** header styles **/
 
 .header {
-  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 90px;
   width: 100%;
   position: relative;
-  background-color: silver;
+  background-color: rgb(0, 0, 0);
+}
+
+.header .menu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-image: url(./assets/icons/icon-base-menu.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5%;
+  background-size: cover;
+}
+
+.header .cart {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-image: url(./assets/icons/icon-base-cart.png);
+  background-size: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 5%;
+  background-size: cover;
+}
+
+.header img {
+  position: absolute;
+  /* width: 100%;
+  height: 100%; */
+}
+
+/**about us **/
+.about-us {
+  display: flex;
+  flex-wrap: wrap;
+  height: 614px;
+  line-height: 1.5;
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 10%;
+}
+
+.about-us h1 {
+  color: rgb(231, 143, 9);
+}
+.about-us p {
+  color: rgb(243, 243, 243);
+}
+
+.about-content {
+  flex: 100%;
+  padding: 2vw;
+}
+.features {
+  display: flex;
+  padding: 2vw;
+}
+.feature {
+  flex: 30%;
+  margin: 5%;
 }

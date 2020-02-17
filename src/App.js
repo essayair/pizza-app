@@ -4,7 +4,7 @@ import './App.css';
 
 import Slider from './components/Slider';
 import Header from './components/Header';
-// import AboutUs from './components/AboutUs';
+import AboutUs from './components/AboutUs';
 // import Popular from './components/Popular';
 // import PizzaBuilder from './components/PizzaBuilder';
 // import Testimonial from './components/Testimonial';
@@ -18,11 +18,12 @@ import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App container">
+    <div className="App">
+      {/* // <div> */}
       <Slider />
       <Header />
-      {/* <AboutUs />
-      <Popular />
+      <AboutUs />
+      {/* <Popular />
       <PizzaBuilder />
       <Testimonial />
       <MobileApp />
