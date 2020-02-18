@@ -8,7 +8,7 @@
 }
 
 body {
-  background: url(./assets/bg-imgs/bg-slider.png);
+  background: url(./assets/imgs/bg-img.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: black;
@@ -17,6 +17,10 @@ body {
   line-height: 1.5;
   width: 100%;
   height: 100%; 
+}
+
+.description {
+  font-size: 12px;
 }
 
 .slider {
@@ -30,7 +34,8 @@ body {
   align-items: center;
 }
 .slidercontent {
-  margin: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .slider h1 {
@@ -90,11 +95,6 @@ body {
   background-size: cover;
 }
 
-.header img {
-  position: absolute;
-  /* width: 100%;
-  height: 100%; */
-}
 
 /**about us **/
 .about-us {
@@ -103,15 +103,18 @@ body {
   height: 614px;
   line-height: 1.5;
   font-family: 'Abril Fatface', cursive;
-  font-family: 'Josefin Sans', sans-serif;
-  margin: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .about-us h1 {
   color: rgb(231, 143, 9);
+  font-size: 2em;
 }
 .about-us p {
-  color: rgb(243, 243, 243);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 12px;
+  color: antiquewhite;
 }
 
 .about-content {
@@ -123,6 +126,93 @@ body {
   padding: 2vw;
 }
 .feature {
-  flex: 30%;
-  margin: 5%;
+  flex: 33%;
+  margin: 3%;
+}
+
+/** style of Popular part**/
+
+.popular {
+  background: url(../src/assets/imgs/bg-base-popular.png) center; 
+  height: 570px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.popular-content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500PX;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.pizza-info {
+  flex: 40%;
+}
+.pizza-img {
+  flex: 50%;
+  border-radius: 50%;
+  height: 100%;
+  width: auto;
+}
+
+.pizza-info h2 {
+  color: antiquewhite;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.pizza-info h3 {
+  color: black;
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.pizza-info p {
+  color: antiquewhite;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.pizza-info button {
+  text-decoration: none;
+  background-color: rgb(253, 188, 44);
+  border: none;
+}
+
+/** pizza-bulder **/
+
+.pizza-bulder {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 1380px;
+  margin: 5% 15% 5% 15%;
+}
+.pizza-bulder h2, h3{
+  color: rgb(231, 143, 9);
+  font-size: 2em;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.pizza-bulder p{
+  color: antiquewhite;
+}
+.build-flow {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #000;
+
+}
+.icons {
+  right:0;
+}
+
+.pizza-bulder button {
+  text-decoration: none;
+  background-color: rgb(253, 188, 44);
+  border: none;
+  
+  margin-top: 10%;
 }
