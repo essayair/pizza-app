@@ -2,7 +2,7 @@
 import React from 'react';
 
 import Slider from './Slider';
-import Header from './Header';
+import TopBar from '../utils/TopBar';
 import AboutUs from './AboutUs';
 import Popular from './Popular';
 import PizzaBuilder from './PizzaBuilder';
@@ -10,14 +10,14 @@ import PizzaBuilder from './PizzaBuilder';
 // import MobileApp from './MobileApp';
 // import BlogPost from './BlogPostS';
 // import Contacts from './Contacts';
-// import Footer from './Footer';
+// import Footer from '../utils/Footer';
 
 
 const HomePage = () => {
     return(
         <div>
             <Slider />
-            <Header />
+            <TopBar />
             <AboutUs />
             <Popular />
             <PizzaBuilder />

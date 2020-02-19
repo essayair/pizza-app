@@ -5,7 +5,7 @@ import cart from "../assets/icons/icon-cart.png";
 import logo from "../assets/icons/logo.png";
 
 
-const Header = () => {
+const TopBar = () => {
     return(
         
         <header className="header">
@@ -25,4 +25,4 @@ const Header = () => {
 
 
 
-export default Header;
+export default TopBar;
