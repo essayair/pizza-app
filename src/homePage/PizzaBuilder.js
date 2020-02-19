@@ -4,7 +4,7 @@ import React from 'react';
 import fold from "../assets/icons/icon-symbol1.png";
 import unfold from "../assets/icons/icon-symbol2.png";
 
-function PizzaBuilder() {
+const PizzaBuilder = () => {
     return (
         <div className="pizza-bulder ">
             <h2>Build Your Own Pizza</h2>

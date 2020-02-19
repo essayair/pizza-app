@@ -2,7 +2,7 @@ import React from 'react';
 
 import pizza_img from "../assets/imgs/pizza-img.png";
 
-function Popular(){
+const Popular = () => {
     return (
         <div className="popular">
             

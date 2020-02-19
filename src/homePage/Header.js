@@ -5,7 +5,7 @@ import cart from "../assets/icons/icon-cart.png";
 import logo from "../assets/icons/logo.png";
 
 
-function Header() {
+const Header = () => {
     return(
         
         <header className="header">

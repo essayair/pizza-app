@@ -5,7 +5,7 @@ import certified from "../assets/icons/icon-feature2.png";
 import creative from "../assets/icons/icon-feature3.png";
 
 
-function AboutUs(){
+const AboutUs = () =>{
     return (
         <div className="content about-us ">
             <div className="about-content">
