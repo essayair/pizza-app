@@ -6,14 +6,10 @@ import HomePage from '../homePage/HomePage';
 
 const Routes =() => {
     return (
-        <BrowserRouter> 
             <Switch>
                 <Redirect exact from="/" to="homePage" />
                 <Route exact path="/homePage" component={ HomePage } />
             </Switch>       
-        </BrowserRouter>
-
-
     );
 }
 

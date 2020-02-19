@@ -15,7 +15,7 @@ const AboutUs = () =>{
                     It’s pizza like this which feeds your sense of sharing, adding flavour to those occasions when you get together with friends and family. 
                     And really, isn’t that what it’s all about? Because when pizza feeds all your senses, it’s not just great, it’s sensational.</p>
             </div>
-
+            
             <div className="features">
                 <div className="careful feature">
                     <img src={careful} alt="careful"/>

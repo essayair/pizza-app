@@ -1,10 +1,6 @@
 import React from 'react';
 import './App.css';
-
 import Routes from './routes/Routes.js';
-
-
-
 
 
 function App() {
@@ -16,6 +12,9 @@ function App() {
 
     </div>
   );
+
 }
+
+
 
 export default App;
