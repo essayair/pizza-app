@@ -1,3 +1,7 @@
+## Dev deploy
+
+http://jr-pizza.s3-website-ap-southeast-2.amazonaws.com/homePage
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
