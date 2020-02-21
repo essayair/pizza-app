@@ -1,4 +1,5 @@
-## Dev deploy
+
+## Dev deploy auto test+build+deploy with cicd.yml
 
 http://jr-pizza.s3-website-ap-southeast-2.amazonaws.com/homePage
 
