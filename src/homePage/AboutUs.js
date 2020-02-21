@@ -7,7 +7,7 @@ import creative from "../assets/icons/icon-feature3.png";
 
 const AboutUs = () =>{
     return (
-        <div className="content about-us ">
+        <div className="about-us ">
             <div className="about-content">
                 <h1>We are pizza makers, and our mission is to make <br /> 
                 cool pizza which feeds all your senses </h1>
@@ -19,21 +19,21 @@ const AboutUs = () =>{
             <div className="features">
                 <div className="careful feature">
                     <img src={careful} alt="careful"/>
-                    <h1>We're Careful</h1>
+                    <h2>We're Careful</h2>
                     <p className="description">The crust is stored in a separate container, on a separate shelf in our fridge. The cheese, marinara sauce and pepperoni are stored in a  designated kit, 
                         and every pizza is freshly baked on designated parchment paper in our ovens.</p>
                 </div>
 
                 <div className="certified feature">
                     <img src={certified} alt="certified"/>
-                    <h1>We're Certified</h1>
+                    <h2>We're Certified</h2>
                     <p className="description">Our cheese-only and cheese-and-pepperoni gluten-free pizzas are prepared using the procedures certified by the Gluten Intolerance Group (GIG), 
                         and we take specific caution when making these pizzas.</p>
                 </div>
 
                 <div className="creative feature">
                     <img src={creative} alt="creative" />
-                    <h1>We're Creative</h1>
+                    <h2>We're Creative</h2>
                     <p className="description">For those simply looking to reduce gluten in their diets, we offer a Create Your Own pizza option.
                         The cheese, pepperoni and marinara come from our gluten-free kit, but all additional toppings are stored at our standard make table.</p>
                 </div>

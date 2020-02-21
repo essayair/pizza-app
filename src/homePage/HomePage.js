@@ -1,11 +1,13 @@
 
 import React from 'react';
+import "./css/homepage.css";
 
 import Slider from './Slider';
 import TopBar from '../utils/TopBar';
 import AboutUs from './AboutUs';
 import Popular from './Popular';
 import PizzaBuilder from './PizzaBuilder';
+import IngredientBoxs from './IngredientsBoxs'
 // import Testimonials from './Testimonial';
 // import MobileApp from './MobileApp';
 // import BlogPost from './BlogPostS';
@@ -15,12 +17,13 @@ import PizzaBuilder from './PizzaBuilder';
 
 const HomePage = () => {
     return(
-        <div>
+        <div className="homepage">
             <Slider />
             <TopBar />
             <AboutUs />
             <Popular />
             <PizzaBuilder />
+            <IngredientBoxs />
             {/* <Testimonials />
             <MobileApp />
             <BlogPost />

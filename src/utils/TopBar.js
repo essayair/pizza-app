@@ -1,6 +1,6 @@
 import React from 'react';
 
-import menu from "../assets/icons/icon-menu.png";
+import sideNav from "../assets/icons/icon-nav.png";
 import cart from "../assets/icons/icon-cart.png";
 import logo from "../assets/icons/logo.png";
 
@@ -8,18 +8,21 @@ import logo from "../assets/icons/logo.png";
 const TopBar = () => {
     return(
         
-        <header className="header">
-            <div className="menu"> 
-                <img src={menu}  alt="menu" /> 
+        <header className="top-bar">
+            <div className="side-nav"> 
+                <img src={sideNav}  alt="sideNav" /> 
             </div>
             <div className="logo">
                 <img src={logo} alt="logo"   />
             </div>
-            <div className="cart">
-                <img src={cart} alt="cart" />
+            <div className="my-cart">
+                <img src={cart} alt="mycart" />
             </div>
-    
         </header>
+
+
+
+
     )
 }
 
