@@ -1,8 +1,8 @@
 import React from 'react';
 
-import careful from "../assets/icons/icon-feature1.png";
-import certified from "../assets/icons/icon-feature2.png";
-import creative from "../assets/icons/icon-feature3.png";
+import careful from "../../assets/icons/icon-feature1.png";
+import certified from "../../assets/icons/icon-feature2.png";
+import creative from "../../assets/icons/icon-feature3.png";
 
 
 const AboutUs = () =>{

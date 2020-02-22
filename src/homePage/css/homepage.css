@@ -8,9 +8,9 @@
 }
 .homepage .slider {
   display: flex;
-  height: 1087px;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 .homepage .slider h1 {
   font-family: "Fredericka the Great", cursive;
@@ -30,46 +30,9 @@
   padding: 10px 30px 10px;
   background: none;
 }
-.homepage .top-bar {
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  height: 90px;
-  background-color: #151515;
-}
-.homepage .top-bar .side-nav {
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(../../assets/icons/icon-base-nav.png);
-  background-size: cover;
-  height: 100%;
-  width: 90px;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
-.homepage .top-bar .my-cart {
-  display: flex;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-image: url(../../assets/icons/icon-base-cart.png);
-  background-size: cover;
-  height: 100%;
-  width: 90px;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
 .homepage .about-us {
   display: flex;
   flex-wrap: wrap;
-  height: 614px;
   line-height: 1.5;
   font-family: "Abril Fatface", cursive;
   margin: 10% 15% 10% 15%;
@@ -126,7 +89,7 @@
 }
 .homepage .popular .popular-pizzas .pizza-info .price {
   font-family: "Fredericka the Great", cursive;
-  color: black;
+  color: #1e1e1e;
 }
 .homepage .popular .popular-pizzas .pizza-info button {
   border: none;
@@ -179,7 +142,7 @@
 }
 .homepage .pizza-builder .build-flow .steps .step {
   color: #d94f2b;
-  font-size: 4vmax;
+  font-size: 4vw;
   font-family: "Fredericka the Great", cursive;
 }
 .homepage .pizza-builder button {
@@ -193,7 +156,7 @@
   justify-content: center;
   height: 430px;
   width: 100%;
-  font-size: 4vmin;
+  font-size: 4vw;
 }
 .homepage .ingredientBoxs .boxs {
   display: flex;

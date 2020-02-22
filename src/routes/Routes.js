@@ -3,7 +3,8 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 
 import HomePage from '../homePage/HomePage';
 import PizzaBuilder from '../pizzaBuilder/PizzaBuilder';
-import Shop from '../shopping/Shop';
+import PizzaMenu from '../pizzaMenu/PizzaMenu';
+import SideNav from '../utils/SideNav';
 
 
 const Routes =() => {
@@ -12,7 +13,10 @@ const Routes =() => {
                 <Redirect exact from="/" to="homePage" />
                 <Route exact path="/homepage" component={ HomePage } />
                 <Route exact path="/pizzabuilder" component={ PizzaBuilder } />
-                <Route exact path="/shop" component={ Shop } />
+                <Route exact path="/pizzamenu" component={ PizzaMenu } />
+
+                <Route exact path="/sidenav" component={ SideNav } />
+
             </Switch>       
     );
 }

@@ -2,15 +2,15 @@
 import React from 'react';
 import "./css/homepage.css";
 
-import Slider from './Slider';
+import Slider from './components/Slider';
 import TopBar from '../utils/TopBar';
-import AboutUs from './AboutUs';
-import Popular from './Popular';
-import PizzaBuilder from './PizzaBuilder';
-import IngredientBoxs from './IngredientsBoxs'
-// import Testimonials from './Testimonial';
-// import MobileApp from './MobileApp';
-// import BlogPost from './BlogPostS';
+import AboutUs from './components/AboutUs';
+import Popular from './components/Popular';
+import PizzaBuilder from './components/PizzaBuilder';
+import IngredientBoxs from './components/IngredientsBoxs'
+import Testimonials from './components/Testimonial';
+import MobileApp from './components/MobileApp';
+import BlogPost from './components/BlogPosts';
 // import Contacts from './Contacts';
 // import Footer from '../utils/Footer';
 
@@ -24,11 +24,11 @@ const HomePage = () => {
             <Popular />
             <PizzaBuilder />
             <IngredientBoxs />
-            {/* <Testimonials />
+            <Testimonials />
             <MobileApp />
             <BlogPost />
-            <Contacts />
-            <Footer /> */}
+            {/* <Contacts /> */}
+            {/* <Footer /> */}
 
         </div>
 

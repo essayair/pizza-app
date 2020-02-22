@@ -1,15 +1,14 @@
-@import './theme.scss';
+@import '../../assets/scss/theme.scss';
 
 .homepage {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  
 
   .slider {
     display: flex;
-    height: 1087px; 
     justify-content: center;
     align-items: center;
+    height: 100vh;
     
     h1 {
       font-family: 'Fredericka the Great', cursive;
@@ -32,51 +31,12 @@
     }
   }
 
-  .top-bar {
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    height: 90px;
-    background-color: $bg-grey;
-
-    .side-nav { 
-      display: flex;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-image: url(../../assets/icons/icon-base-nav.png);
-      background-size: cover;
-      height: 100%;
-      width: 90px;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-    }
-    .my-cart { 
-      display: flex;
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-image: url(../../assets/icons/icon-base-cart.png);
-      background-size: cover;
-      height: 100%;
-      width: 90px;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-    
-    }
-  }
 
   /** style for about-us part **/
 
   .about-us {
     display: flex;
     flex-wrap: wrap;
-    height: 614px;
     line-height: 1.5;
     font-family: 'Abril Fatface', cursive;
     margin:10% 15% 10% 15%;
@@ -139,7 +99,7 @@
         margin: auto;
         .price {
           font-family: 'Fredericka the Great', cursive;
-          color: $black;
+          color: $bg-black;
         }
 
         button {
@@ -204,7 +164,7 @@
 
         .step {
           color: $border-color;
-          font-size: 4vmax;
+          font-size: 4vw;
           font-family: 'Fredericka the Great', cursive;
         }
       }
@@ -226,7 +186,7 @@
     justify-content: center;
     height:430px;
     width: 100%;
-    font-size: 4vmin;
+    font-size: 4vw;
     .boxs {
       display: flex;
       flex-direction: row;
