@@ -1,0 +1,95 @@
+@import '../../assets/scss/theme.scss';
+
+
+.pizzaBuilder {
+    background-image: url(../../assets/imgs/bg-builder.png);
+    background-color: $bg-black;
+    background: cover;
+    // font-family: 'Abril Fatface', cursive;
+
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding:10%;
+        color: $primary-color;
+        background-color: rgb(30,30,30);
+        
+        h1 {
+            font-family: 'Fredericka the Great', cursive;
+            color: $text-white;
+            font-size: 4vw;
+
+        }
+        .location {
+            button {
+                color: $primary-color;
+                border: $primary-color groove 2px;
+                padding: 10px 20px 10px;
+                background: none;
+            }
+        }
+
+    }
+
+    .pizza-building {
+        // background-image: url(../../assets/imgs/bg-builder.png);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 0 15% 5%;
+        color: $primary-color;
+        // box-shadow: 2px 1px 2px rgb(65, 64, 64);
+
+
+        .ingredients{ 
+            flex:65%;        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            // align-items: center;
+            padding: 2%;
+            .title {
+                position: relative;
+                .icons {
+                  position: absolute;
+                  right: 0;
+                }
+            }
+
+            hr {
+                border:1px groove $line-color;
+              }
+                    
+            .steps {
+                display: flex;
+                flex-direction: row;;
+
+                .step {
+                color: $border-color;
+                font-size: 4vw;
+                font-family: 'Fredericka the Great', cursive;
+                }
+            }
+        }
+
+
+
+
+
+        .infoBoard {
+            padding: 2%;
+            background-image: url(../../assets/imgs/bg-infoboard-Base.png);
+            flex:30%;
+        }
+
+        
+
+    }
+
+
+
+
+}
+
