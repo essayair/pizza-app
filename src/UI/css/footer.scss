@@ -1,0 +1,46 @@
+
+@import '../../assets/scss/theme.scss';
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .contact-us {
+        margin-top: 20px;
+        color: $primary-color;
+
+        p {
+            font-family: 'Fredericka the Great', cursive;
+            font-size: 2vw;
+            color: $border-color
+
+        }
+    }
+
+    .socialMedia {
+        ul {
+            display: flex;
+            list-style-type: none;
+            li {
+                padding: 1vw;
+                a {
+                    color: whitesmoke;
+
+                }
+            }
+        }
+    }
+
+    .copyright {
+        width: 100%;
+        padding-top: 1vw ;
+        background-color: black;
+    }
+
+
+
+}

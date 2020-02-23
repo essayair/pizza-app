@@ -4,7 +4,7 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import HomePage from '../homePage/HomePage';
 import PizzaBuilder from '../pizzaBuilder/PizzaBuilder';
 import PizzaMenu from '../pizzaMenu/PizzaMenu';
-import SideNav from '../utils/SideNav';
+import SideNav from '../UI/SideNav';
 
 
 const Routes =() => {
