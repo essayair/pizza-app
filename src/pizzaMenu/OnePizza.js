@@ -10,8 +10,8 @@ const OnePizza = () => {
             <div className="OnePizza">
                 {/* <onlick href to more info > */}
                 <img src={ pizzaSample } alt="pizza"/>
-                <h4 className="pizza-name" >Kimehi BBQ Chiken</h4>
-                <p>Pizza is a savory dish of Italian origin, consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese and so on. </p>
+                <h4 className="pizza-name" >Kimehi BBQ</h4>
+                <p>Pizza is a savory dish of Italian origin. Pizza can be as simple or as difficult as you'd like it to be. </p>
                 <h5 className="price"> $ 20.00 </h5>
                 <div className="order-by-size">
                     <select className="size" name="size">
