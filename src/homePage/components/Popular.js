@@ -1,6 +1,6 @@
 import React from 'react';
 
-import pizza_img from "../assets/imgs/pizza-img.png";
+import pizza_img from "../../assets/imgs/pizza-img.png";
 
 const Popular = () => {
     return (

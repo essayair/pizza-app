@@ -1,20 +1,11 @@
 import React from 'react';
 
-
 import fold from "../assets/icons/icon-symbol1.png";
 import unfold from "../assets/icons/icon-symbol2.png";
 
-const PizzaBuilder = () => {
+const Ingredients = () => {
     return (
-        <div className="pizza-builder">
-            <h2>Build Your Own Pizza</h2>
-            <p>Do you think you have what it takes to become a chef and create a pizza masterpiece? 
-                Well with Margherita’s you can do just that with Pizza Chef. The interactive pizza builder lets you create
-                your pizza your way and is perfect for those customers who want to try a new flavour combination, 
-                try new ingredients and mix it up from the menu.
-            </p>
-
-            <div className="build-flow">
+<div className="build-flow">
                 <div className="title">
                     <hr />
                     <div className="steps">
@@ -54,17 +45,12 @@ const PizzaBuilder = () => {
                         <img src={fold} className="icons" alt="fold"/>
                     </div>
 
-                    </div>       
+                </div>       
                     <hr />     
-                </div>
-
-            <button>CREATE YOUR OWN PIZZA</button>
-
-        </div>
+            </div>
     )
+
 }
 
 
-
-
-export default PizzaBuilder;
+export default Ingredients;
