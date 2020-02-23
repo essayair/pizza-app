@@ -3,7 +3,10 @@ import styled from 'styled-components';
 // import { Link } from 'react-router-dom';
 import { NavLink, withRouter } from 'react-router-dom';
 
+import './css/sideNav.css';
+
 const NavContainer = styled.ul`
+    width:200px;
     display:flex;
     flex-direction: column;
     // color: ${ props => props.isRed && 'red' };
@@ -17,8 +20,8 @@ const SideNav = () => {
 
 
     return (
-        <nav>
-            <ul>
+        <div className="nav">
+            <ul className="ul">
                 <NavContainer >
                     <li><NavLink    to="/homepage">Home</NavLink></li>
                     <li><NavLink    to="/pizzaMenu">PIZZA MENU</NavLink></li>
@@ -36,7 +39,7 @@ const SideNav = () => {
                     {/* <button onClick={() => props.history.push('/students')}>go to students</button> */}
                 </NavContainer>
             </ul>
-        </nav>
+        </div>
     )
 }
 

@@ -1,8 +1,8 @@
 /*here is building page */
 
 import React from 'react';
-import Ingredients from './Ingredients';
-import InfoBoard from './InfoBoard';
+import BuildIngredients from './BuildIngredients';
+import BuildingInfoBoard from './BuildingInfoBoard';
 
 const Building = () => {
     return (
@@ -10,12 +10,12 @@ const Building = () => {
 
             <div className="ingredients board">
                 <h2>Building Your Own Pizza</h2>
-                <Ingredients />
+                <BuildIngredients />
             </div>
 
             <div className="infoBoard board">
                 <h2>Your Order </h2>
-                <InfoBoard />
+                <BuildingInfoBoard />
             </div>
 
         </div>

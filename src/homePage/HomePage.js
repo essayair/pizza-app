@@ -3,16 +3,16 @@ import React from 'react';
 import "./css/homepage.css";
 
 import Slider from './components/Slider';
-import TopBar from '../utils/TopBar';
+import TopBar from '../UI/TopBar';
 import AboutUs from './components/AboutUs';
 import Popular from './components/Popular';
 import PizzaBuilder from './components/PizzaBuilder';
 import IngredientBoxs from './components/IngredientsBoxs'
-import Testimonials from './components/Testimonial';
+// import Testimonials from './components/Testimonial';
 import MobileApp from './components/MobileApp';
 import BlogPost from './components/BlogPosts';
 // import Contacts from './Contacts';
-// import Footer from '../utils/Footer';
+import Footer from '../UI/Footer';
 
 
 const HomePage = () => {
@@ -24,11 +24,11 @@ const HomePage = () => {
             <Popular />
             <PizzaBuilder />
             <IngredientBoxs />
-            <Testimonials />
+            {/* <Testimonials /> */}
             <MobileApp />
             <BlogPost />
             {/* <Contacts /> */}
-            {/* <Footer /> */}
+            <Footer />
 
         </div>
 

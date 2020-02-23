@@ -1,0 +1,28 @@
+@import '../../assets/scss/theme.scss';
+
+.menu-book {
+    margin: 3% 20% 5%;
+    line-height: 1.5em;
+
+    .filter-container {
+        display: flex;
+        width: 100%;
+        border: $primary-color solid 1px;
+        
+    }
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+        color: $primary-color;
+        flex-wrap: wrap;
+        margin: 5% 0 5%;
+
+        .menu-row {
+            flex:21%;
+            padding: 1%;
+
+
+        }
+        
+    }
+}

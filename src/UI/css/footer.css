@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.footer .contact-us {
+  color: #fdbc2c;
+}
+.footer .contact-us p {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 2vw;
+  color: #d94f2b;
+}
+.footer .socialMedia ul {
+  display: flex;
+  list-style-type: none;
+}
+.footer .socialMedia ul li {
+  padding: 1vw;
+}
+.footer .socialMedia ul li a {
+  color: whitesmoke;
+}
+.footer .copyright {
+  width: 100%;
+  padding-top: 1vw;
+  background-color: black;
+}
+
+/*# sourceMappingURL=footer.css.map */

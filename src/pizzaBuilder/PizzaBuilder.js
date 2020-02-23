@@ -2,13 +2,11 @@
 import React from 'react';
 import './css/pizzaBuilder.scss';
 
-import TopBar from '../utils/TopBar';
+import TopBar from '../UI/TopBar';
 import Header from './Header';
 import Building from './Building';
-// import Ingredients from './Ingredients';
-// import InfoBoard from  './InfoBoard';
 // import Contacts from './Contacts';
-// import Footer from '../utils/Footer';
+import Footer from '../UI/Footer';
 
 
 const PizzaBuilder = () => {
@@ -18,9 +16,7 @@ const PizzaBuilder = () => {
                 <TopBar />
                 <Header />
                 <Building />
-                {/* <Ingredients /> */}
-                {/* <InfoBoard /> */}
-                {/* <Footer /> */}
+                <Footer />
             </div>
         </div>
 

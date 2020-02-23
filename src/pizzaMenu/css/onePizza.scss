@@ -1,0 +1,36 @@
+@import '../../assets/scss/theme.scss';
+
+.OnePizza {
+    width: 100%;
+    line-height: 1.5em;
+    color: $grey-white;
+    padding: 3%;
+    margin-bottom: 30%;
+
+    h4 {
+        color: $primary-color;
+        font-family: $font-fatface;
+       }
+
+    h5 {
+        color:$border-color;
+        font-family: $font-great;
+    }
+    img {
+        width: 100%;
+        border-radius: 50%;
+    }
+    .order-by-size {
+        display: flex;
+        display: row;
+        justify-content: center;
+        button {
+            color: $text-black;
+            border: $primary-color solid 2px;
+            background-color: $primary-color;
+        }
+    }
+
+    
+}
+
