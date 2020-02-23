@@ -1,5 +1,5 @@
 @import '../../assets/scss/theme.scss';
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
 
 
 .homepage {
@@ -128,7 +128,6 @@
   .pizza-builder {
     justify-content: center;
     align-content: center;
-    height: 1380px;
     margin: 5% 15% 5% 15%;
 
     h2, h3 {
@@ -183,10 +182,8 @@
 
   .ingredientBoxs {
     background: url(../../assets/imgs/bg-ingredient.png) center center navajowhite;
-
     background-size: cover;
     justify-content: center;
-    height:430px;
     width: 100%;
     font-size: 4vw;
     .boxs {
@@ -291,5 +288,7 @@
       margin: 4px 2px;
     }                             
   }
+
+}
 
 }

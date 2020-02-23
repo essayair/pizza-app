@@ -1,7 +1,6 @@
 import React from 'react';
 
 import separateLogo from '../../src/assets/imgs/separate-logo.png';
-import newsletterBase from '../../src/assets/imgs/newsletter-base.png'
 // import separateSymbol from '../../src/assets/imgs/separate-symbol.png';
 import './css/footer.css';
 import NewsLetter from './NewsLetter';

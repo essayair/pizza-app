@@ -1,0 +1,22 @@
+.menu-book {
+  margin: 3% 20% 5%;
+  line-height: 1.5em;
+}
+.menu-book .filter-container {
+  display: flex;
+  width: 100%;
+  border: #fdbc2c solid 1px;
+}
+.menu-book .menu-list {
+  display: flex;
+  flex-direction: row;
+  color: #fdbc2c;
+  flex-wrap: wrap;
+  margin: 5% 0 5%;
+}
+.menu-book .menu-list .menu-row {
+  flex: 21%;
+  padding: 1%;
+}
+
+/*# sourceMappingURL=menuBook.css.map */

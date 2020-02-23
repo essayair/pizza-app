@@ -6,7 +6,7 @@ import TopBar from '../UI/TopBar';
 import Header from './Header';
 import Building from './Building';
 // import Contacts from './Contacts';
-// import Footer from '../utils/Footer';
+import Footer from '../UI/Footer';
 
 
 const PizzaBuilder = () => {
@@ -16,7 +16,7 @@ const PizzaBuilder = () => {
                 <TopBar />
                 <Header />
                 <Building />
-                {/* <Footer /> */}
+                <Footer />
             </div>
         </div>
 

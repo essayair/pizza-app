@@ -14,7 +14,7 @@ const NewsLetter = () => {
                 <div className="content">
                         <p class="slogan">Sign up for the newsletter and get exclusive deals.</p>
                         <div className="sub-container">
-                            <input type="text" id="fname" className="fname space" />
+                            <input type="text" id="fname" placeholder="Your Email Here" className="fname space" />
                             <button class="subcribebutton space">SUBCRIBE</button>
                         </div>
 
