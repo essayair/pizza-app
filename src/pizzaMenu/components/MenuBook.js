@@ -1,13 +1,15 @@
 
 import React from 'react';
-import './css/menuBook.css';
+// import '../css/menuBook.css';
+
 import OnePizza from "./OnePizza";
+import Filter from './Filter';
 
 const MenuBook = () => {
     return(
         <div className="menu-book">
             <div className="filter-container">
-                <p>Filter Container</p>
+                <Filter />
             </div>
 
             <div className="menu-list">

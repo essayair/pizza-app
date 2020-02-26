@@ -2,14 +2,16 @@ import React from 'react';
 
 import TopBar from '../UI/TopBar';
 import Footer from '../UI/Footer';
-import MenuHeader from './MenuHeader';
-import MenuBook from './MenuBook';
+import MenuHeader from './components/MenuHeader';
+import MenuBook from './components/MenuBook';
+
+import './css/pizzaMenu.scss'
 
 
 
-const PizzaBuilder = () => {
+const PizzaMenu = () => {
     return(
-        <div>
+        <div className="pizzaMenu" >
             <TopBar />
             <MenuHeader />
             <MenuBook />
@@ -21,5 +23,5 @@ const PizzaBuilder = () => {
  
 
 
-export default PizzaBuilder;
+export default PizzaMenu;
 

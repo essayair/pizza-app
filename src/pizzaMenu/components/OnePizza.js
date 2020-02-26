@@ -1,6 +1,6 @@
 import React from 'react';
-import pizzaSample from '../../src/assets/imgs/pizza-sample.png';
-import './css/onePizza.scss';
+import pizzaSample from '../../assets/imgs/pizza-sample.png';
+import '../css/onePizza.scss';
 
 
 
@@ -16,7 +16,7 @@ const OnePizza = () => {
                 <div className="order-by-size">
                     <select className="size" name="size">
                         <option value="Small">Small</option>
-                        <option value="Medium">Medium</option>
+                        <option value="Medium" selected>Medium</option>
                         <option value="Large">Large</option>
                         <option value="Jumbo">Jumbo</option>
                         <option value="Party Size">Party Size</option>

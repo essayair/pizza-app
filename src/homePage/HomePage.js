@@ -1,6 +1,8 @@
 
 import React from 'react';
 import "./css/homepage.css";
+import "./css/homepage.scss";
+
 
 import Slider from './components/Slider';
 import TopBar from '../UI/TopBar';

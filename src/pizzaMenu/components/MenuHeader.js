@@ -1,6 +1,6 @@
 import React from 'react';
-import './css/menuHeader.scss';
-import './css/menuHeader.css';
+import '../css/menuHeader.scss';
+import '../css/menuHeader.css';
 
 
 

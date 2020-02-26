@@ -1,0 +1,111 @@
+@import '../../assets/scss/theme.scss';
+
+.pizzaMenu{
+    .menu-header {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        color: $primary-color;
+        background-color: rgb(30,30,30);
+        
+        h1 {
+            font-family: 'Fredericka the Great', cursive;
+            color: $text-white;
+            font-size: 4vw;
+    
+        }
+        .location {
+            button {
+                color: $primary-color;
+                border: $primary-color groove 2px;
+                padding: 10px 20px 10px;
+                background: none;
+            }
+        }
+    
+    }
+    /** following for filter**/
+
+
+
+    /** menubook here**/
+
+    .menu-book {
+        margin: 3% 20% 5%;
+        line-height: 1.5em;
+    
+        .filter-container {
+            display: flex;
+            width: 100%;
+            .filtertitle {
+                display: flex;
+                flex-direction: row;
+                padding-left: 20px;
+                button {
+                    border: none;
+                    background: none;
+                    color: $border-color;
+                }
+                .title-info{
+                margin: 10px;
+                    
+                }
+              
+            }
+
+                /** following for filter in menu book**/
+            .filter {
+                position: relative;
+                width: 100%;
+                background-color:rgb(8, 8, 8, 0.6);
+                text-align: left;
+
+                hr {
+                    border: solid $border-color 2px;
+                }
+                .filters {
+                    display: flex;
+                    justify-content: space-around;
+                    
+                    .filter_list {
+                        position: relative;
+                        display: block;
+                        flex-direction: column;
+
+                        label {
+                            display: block;
+                            padding-left: 0px;
+                            margin-bottom: 12px;
+                            font-size: 22px;
+
+                          }
+
+
+                    }
+                }
+
+            }
+            
+        }
+        .menu-list {
+            display: flex;
+            flex-direction: row;
+            color: $primary-color;
+            flex-wrap: wrap;
+            margin: 5% 0 5%;
+    
+            .menu-row {
+                flex:21%;
+                padding: 1%;
+    
+    
+            }
+            
+        }
+
+        
+
+
+    }
+
+}

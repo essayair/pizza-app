@@ -5,7 +5,8 @@ import HomePage from '../homePage/HomePage';
 import BuildPizza from '../buildPizza/BuildPizza';
 import PizzaMenu from '../pizzaMenu/PizzaMenu';
 import SideNav from '../UI/SideNav';
-import OnePizza from "../pizzaMenu/OnePizza";
+import OnePizza from "../pizzaMenu/components/OnePizza";
+import TopBar from "../UI/TopBar";
 
 const Routes =() => {
     return (
@@ -16,6 +17,8 @@ const Routes =() => {
                 <Route exact path="/pizzamenu" component={ PizzaMenu } />
                 <Route exact path="/sidenav" component={ SideNav } />
                 <Route exact path="/onepizza" component={ OnePizza } />
+                <Route exact path="/topbar" component={ TopBar } />
+
 
 
             </Switch>       

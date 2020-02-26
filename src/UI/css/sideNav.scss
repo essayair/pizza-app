@@ -1,0 +1,75 @@
+@import '../../assets/scss/theme.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .sidebar {
+      .sidebar-container{
+      position: relative;
+      font-size: 1em;
+      width: 15vw;
+      height: 100vh;
+      background-color: black;
+      left: -15vw;
+
+
+      .nav-icon {
+        background-image: url("../../assets/icons/icon-base-nav.png");
+       display: flex;
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        top: 0;
+        right: -90px;
+
+      }
+      .navigation {
+          width: 100%;
+          overflow: hidden;
+          .search-container {
+              form {
+                  display: flex;
+                  flex-direction: row;
+                  input {
+                    padding: 6px;
+                    margin-top: 8px;
+                    border: none;
+                  }
+                  button {
+                    float: right;
+                    padding: 6px 10px;
+                    margin-top: 8px;
+                    margin-right: 16px;
+                    background: #ddd;
+                    border: none;
+                    cursor: pointer;
+
+                  }
+              }
+          }
+
+      }
+      ul li .link{
+          text-decoration: none;
+          color: white;
+
+      }
+
+
+  }
+
+  }
+  .sidebar-container  ul li .link:hover {
+    color: $primary-color;
+}
+
+ 

@@ -2,7 +2,6 @@
   
   @import '../../assets/scss/theme.scss';
 
-  
   .top-bar {
     display: flex;
     position: relative;
@@ -18,14 +17,17 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-image: url(../../assets/icons/icon-base-nav.png);
-      background-size: cover;
-      height: 100%;
-      width: 90px;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
+
+
     }
+
+    .side-nav:hover {
+      .sidebar-container  {
+        left: 0;
+    }
+
+    }
+    
     .my-cart { 
       display: flex;
       position: absolute;
