@@ -43,6 +43,8 @@
         // width: 100%;
         color: $primary-color;
         // box-shadow: 2px 1px 2px rgb(65, 64, 64);
+        align-items: flex-start;
+
 
         .ingredients {
 
@@ -78,6 +80,7 @@
                         margin-left: 0em;
                         font-size: 4em;
                         font-family: 'Fredericka the Great', cursive;
+                        color: $border-color;
                     }
                     .step_name {
                         text-align: left;
@@ -104,11 +107,25 @@
 
 
         .infoBoard {
-            margin-left: 2%;
-            background-color: black;
+            background-color: rgb(0,0,0,0.4);
             background-image: url(../../assets/imgs/bg-infoboard-Base.png);
             flex:30%;
+            color: white;
 
+            h2 {
+                color: $primary-color;
+                font-family: $font-fatface;
+            }
+            .infoboard_head{
+                display: flexbox;
+                flex: row;
+                align-items: flex-start;
+                .column {
+                    padding: 1em;
+
+                }
+
+            }
         }
 
         

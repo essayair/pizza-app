@@ -8,15 +8,9 @@ const Building = () => {
     return (
         <div className="pizza-building">
 
-            <div className="ingredients board">
-                <h2>Building Your Own Pizza</h2>
                 <BuildIngredients />
-            </div>
 
-            <div className="infoBoard board">
-                <h2>Your Order </h2>
                 <BuildingInfoBoard />
-            </div>
 
         </div>
 
