@@ -5,16 +5,16 @@ import '../css/pizzaMenu.scss';
 
 const Filter = () => {
     return (
-        <div className="filter">
-            <div className="filtertitle">
-                <button>FILTER</button>
+        <div className="filter_container">
+            <div className="filter_title">
+                <button className="filter_button"> FILTER</button>
                 <p className="title-info">Showing 1-12 of 19 results</p>
             </div>
             <hr />
             <div className="filters">
                 <div className="filter_list ">
                     <h5>SIZE</h5>
-                    <label className="option-container"><input type="radio" />Small</label>
+                    <label className="option-container"><input type="radio" value="Small" />Small</label>
                     <label className="option-container" ><input type="radio" />Medium</label>
                     <label className="option-container"><input type="radio" />Large</label>
                     <label className="option-container"><input type="radio" />Jumbo</label>
@@ -64,6 +64,7 @@ const Filter = () => {
                     <label className="option-container"><input type="checkbox" />Broccoli</label>
                 </div>
             </div>
+            <button className="confirm_button">FILTER SELECTED</button>
         </div>
     )
 }

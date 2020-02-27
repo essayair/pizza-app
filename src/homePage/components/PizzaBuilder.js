@@ -14,52 +14,32 @@ const PizzaBuilder = () => {
                 try new ingredients and mix it up from the menu.
             </p>
 
-            <div className="build-flow">
-                <div className="title">
-                    <hr />
-                    <div className="steps">
-                        <div className="first step">1
-                        <h3>ChooseYourCrust</h3>
-                        </div>
+            <ul className="build_flow">
+                <li className="steps">
+                        <span className="first step">1.</span> <span className="step_name">ChooseYourCrust</span>
                         <img src={fold}  className="icons" alt="fold" />
-                    </div>
+                </li>
 
-                </div>
-
-                <div className="title">                    
-                    <hr />
-                    <div className="steps"> 
-                        <div className="second step">2</div>
-                        <h3>SlectYourSauce</h3>
+                <li className="steps">                    
+                        <span className="second step">2.</span> <span className="step_name">SlectYourSauce</span>
                         <img src={fold} className="icons" alt="fold"/>
-                    </div>
+                </li>
 
-                </div>
-
-                  
-                <div className="title">
-                    <hr />  
-                    <div className="steps">
-                        <div className="third step">3</div>
-                        <h3>AddCheese</h3>
+                <li className="steps">
+                        <span className="third step">3.</span> <span className="step_name">AddCheese</span>
                         <img src={unfold} className="icons" alt="unfold"/>
-                    </div>
+                </li>
 
-                </div>
-
-                <div className="title">
-                    <hr />
-                    <div className="steps">
-                        <div className="fourth step">4</div>
-                        <h3>ChooseYourTopping</h3>
+                <li className="steps">
+                        <span className="fourth step">4.</span><span className="step_name">ChooseYourTopping</span>
                         <img src={fold} className="icons" alt="fold"/>
-                    </div>
-
-                </div>       
-                    <hr />     
-            </div>
+                </li>       
+                 
+            </ul>
 
             <button>CREATE YOUR OWN PIZZA</button>
+
+
 
         </div>
     )

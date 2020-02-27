@@ -1,6 +1,6 @@
 import React from 'react';
 import pizzaSample from '../../assets/imgs/pizza-sample.png';
-import '../css/onePizza.scss';
+// import '../css/onePizza.scss';
 
 
 

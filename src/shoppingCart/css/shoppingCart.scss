@@ -1,0 +1,83 @@
+@import '../../assets/scss/theme.scss';
+
+.shopping_cart {
+    width: 100%;
+    
+    .cart_header {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        color: $primary-color;
+        background-color: rgb(30,30,30);
+        
+        h1 {
+            font-family: 'Fredericka the Great', cursive;
+            color: $text-white;
+            font-size: 4vw;
+    
+        }
+        .location {
+            button {
+                color: $primary-color;
+                border: $primary-color groove 2px;
+                padding: 10px 20px 10px;
+                background: none;
+            }
+        }
+    }
+
+    .cart {
+        margin: $content_margin;
+        display: flex;
+        flex-direction: row;
+        .orders {
+            flex: 66%;
+
+
+
+        }
+
+
+
+
+        .cart_totals {
+            flex: 33%;
+            display: flex;
+            flex-direction: column;
+            background-color:rgb(0,0,0,0.4);
+            padding: 2em;
+            text-align: left;
+            .subtotal, .ship_or, .order_total {
+                display: flex;
+                text-align: left;
+
+                // justify-content: space-around;
+                span {
+                    text-align: left;
+
+                }
+            }
+            .update_bt {
+                background:none;
+                color: white;
+                border: 1px solid $primary-color;
+                margin: 1em;
+                padding: 0 2em 0;
+            }
+            .gocheck_bt {
+                background-color: $primary-color;
+                border: none;
+                padding: 0 1em 0;
+            }
+ 
+
+        }
+    }
+
+
+
+
+
+
+
+}

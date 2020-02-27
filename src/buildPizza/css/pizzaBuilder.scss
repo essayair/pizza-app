@@ -5,6 +5,7 @@
     background-image: url(../../assets/imgs/bg-builder.png);
     background-color: $bg-black;
     background: cover;
+    font-size: 16px;
     // font-family: 'Abril Fatface', cursive;
 
 
@@ -33,55 +34,81 @@
     }
 
     .pizza-building {
+
         // background-image: url(../../assets/imgs/bg-builder.png);
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        margin: 0 15% 5%;
+        margin: 0 20% 5%;
+        // width: 100%;
         color: $primary-color;
         // box-shadow: 2px 1px 2px rgb(65, 64, 64);
 
+        .ingredients {
 
-        .ingredients{ 
-            flex:65%;        
+            flex:66%;        
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-content: center;
             // align-items: center;
-            padding: 2%;
-            .title {
-                position: relative;
-                .icons {
-                  position: absolute;
-                  right: 0;
-                }
-            }
+            margin-right: 2%;
 
-            hr {
-                border:1px groove $line-color;
-              }
-                    
-            .steps {
+            ul {
+                width: 100%;
+                list-style-type: none;
+                text-align: left;
+                list-style: none;
+                border-top: 1px solid grey;
+                margin-bottom: 5em;
+
+    
+            li {
+                padding-top: 1em;
+                padding-bottom: 1em;
+                border-bottom: 1px solid grey;
                 display: flex;
-                flex-direction: row;;
+                flex-wrap: wrap;
+                text-align: left;
+    
+                    .step {
+                        flex: 0;
+                        text-align: left;
+                        padding: 0em 0.5em 0em 0em;
+                        margin-left: 0em;
+                        font-size: 4em;
+                        font-family: 'Fredericka the Great', cursive;
+                    }
+                    .step_name {
+                        text-align: left;
+                        margin-left: 0em;
+                        padding-left: 0;
+                        flex: 50%;
+                        font-size: 2em;
+                        font-family: 'Abril Fatface', cursive;
+                        text-align: left;
 
-                .step {
-                color: $border-color;
-                font-size: 4vw;
-                font-family: 'Fredericka the Great', cursive;
+                        color: $primary-color;
+                    }
+                    img {
+                        margin-right: 0em;
+                    }
                 }
+    
             }
-        }
 
+        }
+        
 
 
 
 
         .infoBoard {
-            padding: 2%;
+            margin-left: 2%;
+            background-color: black;
             background-image: url(../../assets/imgs/bg-infoboard-Base.png);
             flex:30%;
+
         }
 
         

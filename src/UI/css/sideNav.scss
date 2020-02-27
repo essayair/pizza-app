@@ -14,17 +14,18 @@
   
   .sidebar {
       .sidebar-container{
-      position: relative;
-      font-size: 1em;
-      width: 15vw;
-      height: 100vh;
-      background-color: black;
-      left: -15vw;
+        padding-top: 1em;
+        position: relative;
+        font-size: 1em;
+        width: 15vw;
+        height: 100vh;
+        background-color: black;
+        left: -15vw;
 
 
       .nav-icon {
         background-image: url("../../assets/icons/icon-base-nav.png");
-       display: flex;
+        display: flex;
         position: absolute;
         width: 90px;
         height: 90px;
