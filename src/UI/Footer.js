@@ -2,7 +2,7 @@ import React from 'react';
 
 import separateLogo from '../../src/assets/imgs/separate-logo.png';
 // import separateSymbol from '../../src/assets/imgs/separate-symbol.png';
-import './css/footer.css';
+import './css/footer.scss';
 import NewsLetter from './NewsLetter';
 
 const Footer = () => {

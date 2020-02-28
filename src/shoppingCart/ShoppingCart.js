@@ -2,6 +2,7 @@
 import React from 'react';
 
 import './css/shoppingCart.scss';
+
 import TopBar from '../UI/TopBar';
 import Footer from '../UI/Footer';
 import PseudoImg from '../assets/icons/pseudo.png'

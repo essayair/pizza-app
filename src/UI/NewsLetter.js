@@ -1,7 +1,7 @@
 import React from 'react';
 
 import newsletterBase from '../../src/assets/imgs/newsletter-base.png'
-import './css/newsLetter.css';
+import './css/newsLetter.scss';
 
 const NewsLetter = () => {
 

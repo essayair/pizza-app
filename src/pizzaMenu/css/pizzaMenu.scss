@@ -24,6 +24,7 @@
         }
     
     }
+    
 
     /** menubook here**/
 
@@ -122,6 +123,9 @@
                         color:$border-color;
                         font-family: $font-great;
                     }
+                    p {
+                        color: $text-white;
+                    }
                     img {
                         width: 100%;
                         border-radius: 50%;
@@ -130,8 +134,8 @@
                     .order-by-size {
                         display: flex;
                         flex-wrap: nowrap;
-                        justify-content: center;
-                        text-align: center;
+                        align-items: stretch;
+                       
                         button {
                             color: $text-black;
                             border: $primary-color solid 0px;
