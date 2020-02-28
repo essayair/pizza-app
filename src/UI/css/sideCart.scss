@@ -1,0 +1,117 @@
+@import '../../assets/scss/theme.scss';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+.sidecart {
+    position: relative;
+    float:right;
+    width: 100%;
+    right:0;
+
+    .side_cart_container {
+        width: 100%;
+        // display: flex;
+        // float: right;
+        background-color: black;
+        font-size: 12PX;
+        position: relative;
+        width: 15vw;
+        height: 100%;
+        /**transition**/
+        right: -15vw; 
+
+
+        
+        .cart_icon {
+            background-image: url("../../assets/icons/icon-base-cart.png");
+            display: flex;
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            top: 0;
+            float: right;
+            right: 15vw;
+    
+          }
+
+        .cart_totals {
+            display: flex;
+            padding: 1em;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: stretch;
+
+            h3 {
+                border-bottom: solid 1px $line-color;
+                margin-bottom: 1em;
+            }
+            h3, h6 {
+                color: $primary-color;
+                font-family: $font-fatface;
+            }
+            .cart_order {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                width: 100%;
+                height: 100%;
+                border-bottom: 1px solid $line-color;
+                margin-bottom: 1em;
+                .pizza_img {
+                    flex:30% ;
+                    height: 3vw;
+                    width: 3vw;
+                    border-radius: 50%;
+                    img {
+                        height: 3vw;
+                        width: 3vw;
+                        border-radius: 50%;
+                    }
+                }
+    
+                
+            }
+            .total_info {
+                .order_total {
+                    font-size: 1em;
+                    color: $border-color;
+                    display: flex;
+                    // flex-wrap: nowrap;
+                    justify-content: space-between;
+                    align-items:flex-start ;
+        
+                }
+        
+    
+            }
+    
+    
+    
+                .update_bt {
+                    background:none;
+                    color: white;
+                    border: 1px solid $primary-color;
+                    margin: 1em;
+                    padding: 0.5em 2em 0.5em;
+                }
+                .gocheck_bt {
+                    background-color: $primary-color;
+                    border: none;
+                    padding: 0.5em 2em 0.5em;
+                }
+            
+        }
+    }
+}

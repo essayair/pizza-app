@@ -8,6 +8,8 @@ import { NavLink } from 'react-router-dom';
 import cart from "../assets/icons/icon-cart.png";
 import logo from "../assets/icons/logo.png";
 import SideNav from "./SideNav";
+import SideCart from "./SideCart";
+
 
 import './css/topBar.scss';
 
@@ -16,18 +18,19 @@ const TopBar = () => {
     return(
         <div>
             <div className="top-bar">
-                <div className="side-nav"> 
+
+                <div className="side_nav"> 
                     <SideNav />
                 </div>
+
                 <div className="logo">
-                <NavLink to="/homepage"> 
-                    <img src={logo} alt="logo"   />
-                
-                </NavLink>
-                
+                    <NavLink to="/homepage"> 
+                        <img src={logo} alt="logo"   />
+                    </NavLink>
                 </div>
-                <div className="my-cart">
-                    <img src={cart} alt="mycart" />
+                
+                <div className="my_cart">
+                    <SideCart />
                 </div>
             </div>
 

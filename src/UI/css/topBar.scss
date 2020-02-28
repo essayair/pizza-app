@@ -11,8 +11,9 @@
     align-content: center;
     height: 90px;
     background-color: $bg-grey;
+    width: 100%;
 
-    .side-nav { 
+    .side_nav { 
       display: flex;
       position: absolute;
       top: 0;
@@ -21,25 +22,18 @@
 
     }
 
-    .side-nav:hover {
+    .side_nav:hover {
       .sidebar-container  {
         left: 0;
     }
 
     }
     
-    .my-cart { 
+    .my_cart { 
       display: flex;
       position: absolute;
       top: 0;
-      right: 0;
-      background-image: url(../../assets/icons/icon-base-cart.png);
-      background-size: cover;
-      height: 100%;
-      width: 90px;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-    
+      right: 0vw;
     }
+    
   }
