@@ -4,8 +4,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 
-// import sideNav from "../assets/icons/icon-nav.png";
-import cart from "../assets/icons/icon-cart.png";
 import logo from "../assets/icons/logo.png";
 import SideNav from "./SideNav";
 import SideCart from "./SideCart";
