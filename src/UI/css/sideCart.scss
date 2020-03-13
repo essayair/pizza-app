@@ -31,6 +31,10 @@
         height: 100%;
         right: 0; 
 
+        :active +.carts_details {
+            display: block;
+          }
+
         button {
             border: none;
         }
@@ -48,12 +52,11 @@
     
           }
 
-          .cart_icon:hover +.carts_details {
-              visibility: visible;
-          }
+
 
         .carts_details {
-            visibility: hidden;
+            // visibility: hidden;
+            display: none;
             position: absolute;
             top: 90px;
             right: 0;
