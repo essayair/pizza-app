@@ -1,37 +1,35 @@
-import React from 'react';
-
+import React, { Component } from 'react';
+import styled from 'styled-components';
 
 import './css/sideCart.scss'
 import PseudoImg from '../assets/icons/pseudo.png'
 import cart_icon from "../assets/icons/icon-cart.png";
 
 
+// const CartsDetails = styled(cart_show)`
+//     display: ${props => props.isActive && 'block'}
 
-class SideCart extends React.Component{
+// `;
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            display: 'none',
-            black: true
 
-        };
-        
-    }
+class SideCart extends Component {
+
+
+
     render() {
-
+        
         return (
             <div className="sidecart">
                 <div className="side_cart_container changeDisplay">
-                    <button className="cart_icon">
+                    <button className="cart_icon" type="button" >
                         <div >
                             <img src={cart_icon} alt="sidecart-icon" /> 
                         </div>
                     </button>
                     
     
-                    <div className="carts_details changeDisplay" >
-                        <div className="cart_visi">
+                    <div className="carts_details changeDisplay" style={{display: 'block'}}>
+                        <div className="cart_show">
                         <h3>Cart Totals</h3>
                         <div>
                             <div className="cart_order">
@@ -75,7 +73,6 @@ class SideCart extends React.Component{
         )
         
     }
-    
 }
 
 export default SideCart;

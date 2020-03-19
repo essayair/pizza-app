@@ -53,7 +53,6 @@ const SideNav = () => {
                             <li><NavLink   to="/homepage" className="link">LOGIN</NavLink></li>
                             <li><NavLink   to="/homepage" className="link">MY ACCOUNT</NavLink></li>
                             <li><NavLink   to="/shoppingcart" className="link">CHECKOUT</NavLink></li>
-                            {/* <button onClick={() => props.history.push('/students')}>go to students</button> */}
                     </ul>
                     </NavContainer>
                 </div>
