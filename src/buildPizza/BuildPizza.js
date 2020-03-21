@@ -2,11 +2,11 @@
 import React from 'react';
 import './css/pizzaBuilder.scss';
 
-import TopBar from '../UI/TopBar';
+import TopBar from '../components/TopBar';
 import Header from './Header';
 import Building from './Building';
 // import Contacts from './Contacts';
-import Footer from '../UI/Footer';
+import Footer from '../components/Footer';
 
 
 const BuildPizza = () => {

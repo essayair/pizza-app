@@ -2,18 +2,19 @@
 import React from 'react';
 import "./css/homepage.scss";
 
+import TopBar from '../components/TopBar';
+import Footer from '../components/Footer';
 
-import Slider from './components/Slider';
-import TopBar from '../UI/TopBar';
-import AboutUs from './components/AboutUs';
-import Popular from './components/Popular';
-import PizzaBuilder from './components/PizzaBuilder';
-import IngredientBoxs from './components/IngredientsBoxs'
+
+import Slider from './sections/Slider';
+import AboutUs from './sections/AboutUs';
+import Popular from './sections/Popular';
+import PizzaBuilder from './sections/PizzaBuilder';
+import IngredientBoxs from './sections/IngredientsBoxs'
 // import Testimonials from './components/Testimonial';
-import MobileApp from './components/MobileApp';
-import BlogPost from './components/BlogPosts';
+import MobileApp from './sections/MobileApp';
+import BlogPost from './sections/BlogPosts';
 // import Contacts from './Contacts';
-import Footer from '../UI/Footer';
 
 
 const HomePage = () => {

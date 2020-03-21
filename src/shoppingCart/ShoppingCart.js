@@ -3,8 +3,8 @@ import React from 'react';
 
 import './css/shoppingCart.scss';
 
-import TopBar from '../UI/TopBar';
-import Footer from '../UI/Footer';
+import TopBar from '../components/TopBar';
+import Footer from '../components/Footer';
 import PseudoImg from '../assets/icons/pseudo.png'
 
 const ShoppingCart = () => {

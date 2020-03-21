@@ -1,9 +1,9 @@
 import React from 'react';
 
-import TopBar from '../UI/TopBar';
-import Footer from '../UI/Footer';
-import MenuHeader from './components/MenuHeader';
-import MenuBook from './components/MenuBook';
+import TopBar from '../components/TopBar';
+import Footer from '../components/Footer';
+import MenuHeader from './sections/MenuHeader';
+import MenuBook from './sections/MenuBook';
 
 import './css/pizzaMenu.scss'
 
