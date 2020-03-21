@@ -1,7 +1,9 @@
 
 ## Dev deploy auto test+build+deploy with cicd.yml
+Webpage:http://margherita-pizza.s3-website-ap-southeast-2.amazonaws.com/homePage
 
-http://jr-pizza.s3-website-ap-southeast-2.amazonaws.com/homePage
+APIServer:http://pizza.ap-southeast-2.elasticbeanstalk.com/api
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
