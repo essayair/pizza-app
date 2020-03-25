@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 import './css/sideCart.scss'
 import PseudoImg from '../assets/icons/pseudo.png'
@@ -13,7 +13,6 @@ import cart_icon from "../assets/icons/icon-cart.png";
 
 
 class SideCart extends Component {
-
 
 
     render() {

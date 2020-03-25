@@ -1,11 +1,6 @@
 import React from 'react';
+import { Button, Input, Form, Message } from "semantic-ui-react";
 import './css/login.scss';
-import { Button, Input, Form } from "semantic-ui-react";
-
-import { login } from '../api/auth'
-import { storeToken } from '../utils/auth';
-import { HOMEPAGE_URL } from '../routes/URLMaps'
-
 
 class Login extends React.Component {
 
@@ -21,23 +16,9 @@ class Login extends React.Component {
     }
 
     handleChange = event => {
-        const key = event.target.name;
+        const key = event.target.email;
         const value = event.target.value;
         this.setState({ [key]: value } );
-
-    }
-
-    handleLogin = () => {
-        const {email, password } = this.state;
-
-        login(email, password).then(token => {
-            storeToken(token);
-            const locationState = this.props.location.state;
-            const redirectTo = (locationState && locationState.from) || HOMEPAGE_URL;
-            this.props.history.replace(redirectTo);
-
-
-        })
 
     }
 
@@ -46,19 +27,19 @@ class Login extends React.Component {
         return (
             
             <div className="login">
+                <h2>Login Form</h2>
                 <button>Login</button>
 
     
                 <div className="login_form">
                     
-                <h2>Please Login First</h2>
                     <Form method="post">
                         <div className="imgcontainer">
                             <span className="close" title="Close Modal">&times;</span>
                         </div>
     
                         <div className="container">
-                            <label><b>Email</b></label>
+                            <label for="email"><b>Email</b></label>
                             <Input 
                                 type="email"
                                 placeholder="Enter Email" 
@@ -67,8 +48,8 @@ class Login extends React.Component {
                                 required 
                             />
     
-                            <label><b>Password</b></label>
-                            <input 
+                            <label for="psw"><b>Password</b></label>
+                            <Input 
                                 type="password"
                                 placeholder="Enter Password" 
                                 name="password" 
@@ -76,14 +57,7 @@ class Login extends React.Component {
                                 required 
                             />
                                 
-                            <Button 
-                            type="submit"
-                            onClick={ this.handleLogin }
-                            
-                            >
-                                Login
-                            
-                            </Button>
+                            <button type="submit">Login</button>
                             <label>
                                 <input type="checkbox" checked="checked" name="remember" /> Remember me
                             </label>

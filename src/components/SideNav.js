@@ -50,7 +50,7 @@ const SideNav = () => {
                             <li><NavLink   to="/homepage" className="link">ABOUT US</NavLink></li>
                             <li><NavLink   to="/homepage" className="link">CONTACT</NavLink></li>
                             <hr />
-                            <li><NavLink   to="/homepage" className="link">LOGIN</NavLink></li>
+                            <li><NavLink   to="/login" className="link">LOGIN</NavLink></li>
                             <li><NavLink   to="/homepage" className="link">MY ACCOUNT</NavLink></li>
                             <li><NavLink   to="/shoppingcart" className="link">CHECKOUT</NavLink></li>
                     </ul>
