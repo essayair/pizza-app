@@ -1,10 +1,23 @@
 import React from 'react';
+import './css/sideNav.scss';
+import { Button } from 'semantic-ui-react';
 import styled from 'styled-components';
+
+
+
 // import { Link } from 'react-router-dom';
 import { NavLink, withRouter } from 'react-router-dom';
 import nav_icon from "../assets/icons/icon-nav.png";
+import { isLoggedIn, removeToken } from '../utils/auth';
+import {
+    HOMEPAGE_URL,
+    PIZZAMENU_URL,
+    BUILDPIZZA_URL,
+    SHOPPINGCART_URL
+ } from '../routes/URLMaps';
 
-import './css/sideNav.scss';
+
+
 
 const NavContainer = styled.ul`
     // display:flex;
@@ -18,11 +31,16 @@ const NavContainer = styled.ul`
     // }
 `;
 
+const logout = history => {
+	removeToken();
+	history.push(HOMEPAGE_URL);
+};
 
 
 
-const SideNav = () => {
+const SideNav = props => {
 
+    // if (!isLoggedIn()) return null;
 
     return (
         <div className="sidebar">
@@ -42,17 +60,24 @@ const SideNav = () => {
 
                     <NavContainer >
                     <ul className="ul">
-                            <li><NavLink   to="/homepage" className="link">HOME</NavLink></li>
-                            <li><NavLink   to="/pizzaMenu" className="link">PIZZA MENU</NavLink></li>
-                            <li><NavLink   to="/buildpizza" className="link">PIZZA BUILDER</NavLink></li>
+                            <li><NavLink   to={HOMEPAGE_URL} className="link">HOME</NavLink></li>
+                            <li><NavLink   to={PIZZAMENU_URL} className="link">PIZZA MENU</NavLink></li>
+                            <li><NavLink   to={BUILDPIZZA_URL} className="link">PIZZA BUILDER</NavLink></li>
                             <li><NavLink   to="/homepage" className="link">BLOG</NavLink></li>
                             <li><NavLink   to="/homepage" className="link">PAGES</NavLink></li>
                             <li><NavLink   to="/homepage" className="link">ABOUT US</NavLink></li>
                             <li><NavLink   to="/homepage" className="link">CONTACT</NavLink></li>
                             <hr />
-                            <li><NavLink   to="/login" className="link">LOGIN</NavLink></li>
+                   
                             <li><NavLink   to="/homepage" className="link">MY ACCOUNT</NavLink></li>
-                            <li><NavLink   to="/shoppingcart" className="link">CHECKOUT</NavLink></li>
+                            <li><NavLink   to={SHOPPINGCART_URL} className="link">CHECKOUT</NavLink></li>
+                            
+                            <li><NavLink   to="/login" className="link">LOG IN</NavLink></li>  
+                            
+                            
+                            <Button onClick={() => logout(props.history)} className="nav-logout">
+				                Log out
+			                </Button>       
                     </ul>
                     </NavContainer>
                 </div>

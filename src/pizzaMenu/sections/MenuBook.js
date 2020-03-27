@@ -1,45 +1,63 @@
 
 import React from 'react';
+// import { Button, Container, Pagination, Segment } from 'semantic-ui-react';
 
-import OnePizza from "./OnePizza";
+
+
+import PizzaCard from "./PizzaCard";
 import Filter from './Filter';
+import { fetchPizzas } from '../../api/pizzas'
 
-const MenuBook = () => {
-    return(
-        <div className="menu_book">
-            <Filter />
+class MenuBook extends React.Component {
 
-            <div className="menu-list">
-                <div className="menu-row"> 
-                    <OnePizza />
-                    <OnePizza />
-                    <OnePizza />
-                    <OnePizza />
-                </div>
-                <div className="menu-row"> 
-                    <OnePizza />
-                    <OnePizza />
-                    <OnePizza />
-                    <OnePizza />
-                </div>
-                <div className="menu-row"> 
-                    <OnePizza />
-                    <OnePizza />
-                    <OnePizza />
-                    <OnePizza />
-                </div>
-                <div className="menu-row"> 
-                    <OnePizza />
-                    <OnePizza />
-                    <OnePizza />
-                    <OnePizza />
-                </div>
+    constructor(props) {
+        super(props);
+        this.state = {
+            pizzas: [],
+            isLoading: false,
+            error: null,
+            
+        }
+    }
 
-                
+    componentDidMount() {
+        this.setState({ isLoading: true }, () =>{
+            fetchPizzas().then(pizzas => {
+                this.setState({ pizzas, isLoading:false});
+            })
+            .catch(error => {
+                this.setState({ error, isLoading:false});
+            });
+    
+        });
+
+    }
+
+
+    render() {
+
+        return(
+            <div className="menu_book">
+                <Filter />
+                    <div className="menu-list"> 
+                       { this.state.pizzas.map(pizza =>(
+                          <PizzaCard
+                          pizzaImage={pizza.pizzaImage}
+                          pizzaName={pizza.pizzaName}
+                          size={pizza.size}     
+                          price={pizza.price} 
+                          description={pizza.description}
+                          ingredients={pizza.ingredients}  
+
+                          />
+                       ))
+                        }
+                    </div>
+    
             </div>
+        );
+    }
 
-        </div>
-    );
 }
  
 

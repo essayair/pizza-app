@@ -98,59 +98,93 @@
         .menu-list {
             display: flex;
             flex-direction: row;
-            color: $primary-color;
             flex-wrap: wrap;
-            margin: 5% 0 5%;
-    
-            .menu-row {
-                flex:21%;
-                padding: 1%;
+            align-items: flex-start;
+            margin-top: 2vh;
 
-                .OnePizza  {
+            .pizza-card {
+                flex: 24%;
+                // width: 25%;
+                height: 50vh;
+                padding-top: 0;
+                margin-top: 0;
+                line-height: 1.5em;
+                color: $grey-white;
+                padding: 2%;
+                margin-bottom: 2vh;
+                ul {
+                    width: auto;
+                    height: 100%;
+                    li {
+                        text-align: center;
+                        align-items: center;
+                        align-content: center;
+                        margin-bottom: 10%;
+                    }
 
-                    width: 100%;
-                    line-height: 1.5em;
-                    color: $grey-white;
-                    padding: 3%;
-                    margin-bottom: 30%;
-                
-                    h4 {
+                    .pizza-img img {
+                        height: 30%;
+                        width: 100%;
+                        border-radius: 1%;
+                    }
+                    .pizza-name {
+                        height: 10%;
                         color: $primary-color;
                         font-family: $font-fatface;
-                       }
-                
-                    h5 {
+                    }
+                    .description {
+                        overflow: auto;
+                        height: 20%;
+                        text-decoration: none;
+                        color: $text-white;
+
+                    }
+                    .description::-webkit-scrollbar {
+                        display: none;
+                        
+                    }
+                    .price {
+                        height: 10%;
                         color:$border-color;
                         font-family: $font-great;
                     }
-                    p {
-                        color: $text-white;
-                    }
-                    img {
-                        width: 100%;
-                        border-radius: 50%;
-                        padding-bottom: 10%;
-                    }
                     .order-by-size {
+                        height: auto;
                         display: flex;
                         flex-wrap: nowrap;
                         align-items: stretch;
-                       
+                        
                         button {
                             color: $text-black;
                             border: $primary-color solid 0px;
                             background-color: $primary-color;
                         }
                     }
+
+                    // h4 {
+                    //     color: $primary-color;
+                    //     font-family: $font-fatface;
+                    //     }
                 
+                    // h5 {
+                    //     color:$border-color;
+                    //     font-family: $font-great;
+                    // }
+                    // p {
+                    //     color: $text-white;
+                    // }
+        
+                    // img {
+                    
+                    // }
+
+        
                 }
                 
-                .OnePizza ~:hover {
-                    border: solid $primary-color 2px;
-                }
             }
-            
         }
-    }
+
+        }
+        
 
 }
